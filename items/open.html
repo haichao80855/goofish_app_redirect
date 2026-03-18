@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>打开闲鱼App</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1 id="title">正在打开闲鱼App…</h1>
+      <div class="p" id="hint">若没有自动跳转，请点下面按钮。</div>
+      <div class="btns">
+        <button class="primary" id="openApp">打开闲鱼App</button>
+        <button class="secondary" id="copyDeep">复制App链接</button>
+        <a class="btn secondary" id="openWeb" href="#" target="_blank" rel="noopener">改用网页打开商品</a>
+      </div>
+      <small>
+        说明：Telegram 内置浏览器通常会拦截网页直接拉起App；因此这里采用“中转页 + 用户点击按钮”的方式。
+        <br/>参数：<code>?deep=...</code>（必填） <code>&web=...</code>（可选） <code>&title=...</code>（可选）
+      </small>
+    </div>
+  </div>
+  <script src="../assets/app.js"></script>
+</body>
+</html>
